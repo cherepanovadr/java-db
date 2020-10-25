@@ -1,4 +1,4 @@
-CREATE DATABASE softuni_stores_system;
+#CREATE DATABASE softuni_stores_system; //EXAM
 
 CREATE TABLE pictures(
 id int PRIMARY KEY AUTO_INCREMENT,
@@ -76,4 +76,7 @@ FOREIGN KEY (manager_id)
 REFERENCES employees (id));
 
 
-
+-- alter table employees
+-- ADD CONSTRAINT fk_employees_employees
+-- FOREIGN KEY (manager_id)
+-- REFERENCES employees (id);
